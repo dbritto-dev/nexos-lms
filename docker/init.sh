@@ -24,7 +24,7 @@ bench set-redis-socketio-host redis://redis:6379
 sed -i '/redis/d' ./Procfile
 sed -i '/watch/d' ./Procfile
 
-bench get-app lms https://github.com/dbritto-dev/nexos-lms/tree/main
+bench get-app lms https://github.com/dbritto-dev/nexos-lms
 bench get-app payments
 
 bench new-site lms.localhost \

@@ -3879,6 +3879,10 @@ msgstr "Preferencia de ubicación"
 msgid "Login"
 msgstr "Iniciar sesión"
 
+#: frontend/src/components/UserDropdown.vue
+msgid "Login to Frappe Cloud"
+msgstr "Iniciar sesión en Frappe Cloud"
+
 #: frontend/src/components/UserDropdown.vue:176
 msgid "Login to Frappe Cloud?"
 msgstr "¿Iniciar sesión en Frappe Cloud?"
@@ -3886,6 +3890,14 @@ msgstr "¿Iniciar sesión en Frappe Cloud?"
 #: frontend/src/pages/JobDetail.vue:63
 msgid "Login to apply"
 msgstr "Iniciar sesión para aplicar al puesto"
+
+#: frontend/src/components/UserDropdown.vue
+msgid "Log in"
+msgstr "Iniciar sesión"
+
+#: frontend/src/components/UserDropdown.vue
+msgid "Log out"
+msgstr "Cerrar sesión"
 
 #: frontend/src/pages/Home/Streak.vue:42
 msgid "Longest Streak"
@@ -3982,6 +3994,10 @@ msgstr "Intentos máximos"
 #: frontend/src/pages/QuizForm.vue:62
 msgid "Maximum Attempts"
 msgstr "Máximo de Intentos"
+
+#: frontend/src/components/UserDropdown.vue
+msgid "My Profile"
+msgstr "Mi Perfil"
 
 #. Label of the medium (Select) field in DocType 'LMS Batch'
 #: frontend/src/pages/BatchForm.vue:194
@@ -6853,6 +6869,10 @@ msgstr "Hasta la fecha"
 #: lms/lms/utils.py:1784
 msgid "To join this batch, please contact the Administrator."
 msgstr "Para unirse a este lote, comuníquese con el Administrador."
+
+#: frontend/src/components/UserDropdown.vue
+msgid "Toggle Theme"
+msgstr "Cambiar Tema"
 
 #: lms/lms/user.py:41
 msgid "Too many users signed up recently, so the registration is disabled. Please try back in an hour"
