@@ -24,15 +24,17 @@ bench set-redis-socketio-host redis://redis:6379
 sed -i '/redis/d' ./Procfile
 sed -i '/watch/d' ./Procfile
 
-bench get-app lms
+bench get-app lms https://github.com/dbritto-dev/nexos-lms
+bench get-app payments
 
 bench new-site lms.localhost \
---force \
---mariadb-root-password 123 \
---admin-password admin \
---no-mariadb-socket
+	  --force \
+	  --mariadb-root-password 123 \
+	  --admin-password admin \
+	  --no-mariadb-socket
 
 bench --site lms.localhost install-app lms
+bench --site lms.localhost install-app payments
 bench --site lms.localhost set-config developer_mode 1
 bench --site lms.localhost clear-cache
 bench use lms.localhost
