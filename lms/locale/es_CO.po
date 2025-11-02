@@ -1441,6 +1441,10 @@ msgstr "Realizar Evaluación"
 msgid "Configurations"
 msgstr "Configuraciones"
 
+#: frontend/src/components/Settings/Settings.vue
+msgid "Configuration"
+msgstr "Configuración"
+
 #: frontend/src/components/UserDropdown.vue:182
 msgid "Confirm"
 msgstr "Confirmar"
@@ -1927,6 +1931,10 @@ msgstr "Contenido de registrarse personalizado"
 #: lms/lms/doctype/lms_batch/lms_batch.json
 msgid "Customisations"
 msgstr "Personalizaciones"
+
+#: frontend/src/components/Settings/Settings.vue
+msgid "Customize"
+msgstr "Personalizar"
 
 #. Option for the 'Color' (Select) field in DocType 'LMS Course'
 #: lms/lms/doctype/lms_course/lms_course.json
@@ -2829,6 +2837,10 @@ msgstr "GSTIN"
 #: frontend/src/components/Settings/PaymentGateways.vue:134
 msgid "Gateway"
 msgstr "Pasarela"
+
+#: frontend/src/components/Settings/Settings.vue
+msgid "Gateways"
+msgstr "Pasarelas"
 
 #. Label of the general_tab (Tab Break) field in DocType 'LMS Settings'
 #: lms/lms/doctype/lms_settings/lms_settings.json
@@ -3865,6 +3877,10 @@ msgstr "ID de LinkedIn"
 #: lms/lms/doctype/cohort_subgroup/cohort_subgroup.json
 msgid "Links"
 msgstr "Enlaces"
+
+#: frontend/src/components/Settings/Settings.vue
+msgid "Lists"
+msgstr "Listas"
 
 #. Option for the 'Status' (Select) field in DocType 'Cohort'
 #: frontend/src/pages/Courses.vue:309 lms/lms/doctype/cohort/cohort.json
@@ -6945,6 +6961,10 @@ msgstr "Comentarios del entrenamiento"
 msgid "Transaction Details"
 msgstr "Detalles de la Transacción"
 
+#: frontend/src/components/Settings/Settings.vue
+msgid "Transactions"
+msgstr "Transacciones"
+
 #. Option for the 'Location Preference' (Select) field in DocType 'User'
 #: lms/fixtures/custom_field.json
 msgid "Travel"
@@ -7575,6 +7595,10 @@ msgstr "Modo Zen"
 #: lms/lms/doctype/lms_live_class/lms_live_class.json
 msgid "Zoom Account"
 msgstr "Cuenta de Zoom"
+
+#: frontend/src/components/Settings/Settings.vue
+msgid "Zoom Accounts"
+msgstr "Cuentas de Zoom"
 
 #: frontend/src/components/Modals/ZoomAccountModal.vue:164
 msgid "Zoom Account created successfully"
