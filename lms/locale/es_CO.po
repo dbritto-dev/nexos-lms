@@ -3,9 +3,9 @@ msgstr ""
 "Project-Id-Version: frappe\n"
 "Report-Msgid-Bugs-To: jannat@frappe.io\n"
 "POT-Creation-Date: 2025-10-24 16:04+0000\n"
-"PO-Revision-Date: 2025-10-27 17:04\n"
-"Last-Translator: jannat@frappe.io\n"
-"Language-Team: Spanish\n"
+"PO-Revision-Date: 2025-11-01 00:00\n"
+"Last-Translator: Claude <noreply@anthropic.com>\n"
+"Language-Team: Spanish (Colombia)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,10 +13,10 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Crowdin-Project: frappe\n"
 "X-Crowdin-Project-ID: 639578\n"
-"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-Language: es-CO\n"
 "X-Crowdin-File: /[frappe.lms] develop/lms/locale/main.pot\n"
 "X-Crowdin-File-ID: 90\n"
-"Language: es_ES\n"
+"Language: es_CO\n"
 
 #: lms/templates/emails/assignment_submission.html:5
 msgid " Please evaluate and grade it."
@@ -3018,11 +3018,11 @@ msgstr "Haz clic en el icono de añadir en el editor y selecciona Cuestionario d
 
 #: frontend/src/components/LessonHelp.vue
 msgid "How to add a YouTube Video?"
-msgstr "¿Cómo añadir un vídeo de YouTube?"
+msgstr "¿Cómo añadir un video de YouTube?"
 
 #: frontend/src/components/LessonHelp.vue
 msgid "Copy the URL of the video from YouTube and paste it in the editor."
-msgstr "Copia la URL del vídeo de YouTube y pégala en el editor."
+msgstr "Copia la URL del video de YouTube y pégala en el editor."
 
 #: frontend/src/components/LessonHelp.vue
 msgid "How to remove an embed?"
@@ -3038,7 +3038,7 @@ msgstr "¿Cómo subir contenido desde tu sistema?"
 
 #: frontend/src/components/LessonHelp.vue
 msgid "To upload Image, Video, Audio or PDF from your system, click on the add icon and select upload from the menu. Then choose the file you want to add to the lesson and it gets added to your lesson."
-msgstr "Para subir Imagen, Vídeo, Audio o PDF desde tu sistema, haz clic en el icono de añadir y selecciona subir del menú. Luego elige el archivo que deseas añadir a la lección y se agregará a tu lección."
+msgstr "Para subir Imagen, Video, Audio o PDF desde tu sistema, haz clic en el icono de añadir y selecciona subir del menú. Luego elige el archivo que deseas añadir a la lección y se agregará a tu lección."
 
 #. Option for the 'Work Mode' (Select) field in DocType 'Job Opportunity'
 #: lms/job/doctype/job_opportunity/job_opportunity.json
@@ -7177,7 +7177,7 @@ msgstr "Cambio de Valor"
 #. Label of the video_link (Data) field in DocType 'LMS Course'
 #: lms/lms/doctype/lms_course/lms_course.json
 msgid "Video Embed Link"
-msgstr "Enlace de incrustación de vídeo"
+msgstr "Enlace de incrustación de video"
 
 #: frontend/src/components/Modals/VideoStatistics.vue:6
 msgid "Video Statistics for {0}"
@@ -7513,7 +7513,7 @@ msgstr "URL del Video de YouTube"
 #. Lesson'
 #: lms/lms/doctype/course_lesson/course_lesson.json
 msgid "YouTube Video will appear at the top of the lesson."
-msgstr "El vídeo de YouTube aparecerá en la parte superior de la lección."
+msgstr "El video de YouTube aparecerá en la parte superior de la lección."
 
 #: lms/www/new-sign-up.html:56
 msgid "Your Account has been successfully created!"

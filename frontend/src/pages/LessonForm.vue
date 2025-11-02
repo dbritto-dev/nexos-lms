@@ -3,57 +3,36 @@
 		<div class="grid md:grid-cols-[75%,25%] h-screen">
 			<div class="border-r">
 				<header
-					class="sticky top-0 z-10 flex flex-col md:flex-row md:items-center justify-between border-b overflow-hidden bg-surface-white px-3 py-2.5 sm:px-5"
-				>
+					class="sticky top-0 z-10 flex flex-col md:flex-row md:items-center justify-between border-b overflow-hidden bg-surface-white px-3 py-2.5 sm:px-5">
 					<Breadcrumbs class="text-ellipsis" :items="breadcrumbs" />
-					<Button
-						variant="solid"
-						@click="saveLesson({ showSuccessMessage: true })"
-						class="mt-3 md:mt-0"
-					>
+					<Button variant="solid" @click="saveLesson({ showSuccessMessage: true })" class="mt-3 md:mt-0">
 						{{ __('Save') }}
 					</Button>
 				</header>
 				<div class="py-5">
 					<div class="w-5/6 mx-auto">
-						<FormControl
-							v-model="lesson.title"
-							label="Title"
-							class="mb-4"
-							:required="true"
-						/>
-						<FormControl
-							v-model="lesson.include_in_preview"
-							type="checkbox"
-							label="Include in Preview"
-						/>
+						<FormControl v-model="lesson.title" label="Title" class="mb-4" :required="true" />
+						<FormControl v-model="lesson.include_in_preview" type="checkbox"
+							:label="__('Include in Preview')" />
 					</div>
 					<div class="border-t mt-4">
 						<div class="w-5/6 mx-auto pt-4">
-							<div
-								class="flex justify-between cursor-pointer"
-								@click="
-									() => {
-										openInstructorEditor = !openInstructorEditor
-									}
-								"
-							>
+							<div class="flex justify-between cursor-pointer" @click="
+								() => {
+									openInstructorEditor = !openInstructorEditor
+								}
+							">
 								<label class="block font-medium text-ink-gray-5 mb-1">
 									{{ __('Instructor Notes') }}
 								</label>
-								<ChevronRight
-									class="stroke-2 h-5 w-5 text-ink-gray-5"
-									:class="{
-										'rotate-90 transform duration-200': openInstructorEditor,
-										'duration-200': !openInstructorEditor,
-									}"
-								/>
+								<ChevronRight class="stroke-2 h-5 w-5 text-ink-gray-5" :class="{
+									'rotate-90 transform duration-200': openInstructorEditor,
+									'duration-200': !openInstructorEditor,
+								}" />
 							</div>
-							<div
-								v-show="openInstructorEditor"
-								id="instructor-notes"
-								class="ProseMirror prose prose-table:table-fixed prose-td:p-2 prose-th:p-2 prose-td:border prose-th:border prose-td:border-outline-gray-2 prose-th:border-outline-gray-2 prose-td:relative prose-th:relative prose-th:bg-surface-gray-2 prose-sm max-w-none !whitespace-normal py-3"
-							></div>
+							<div v-show="openInstructorEditor" id="instructor-notes"
+								class="ProseMirror prose prose-table:table-fixed prose-td:p-2 prose-th:p-2 prose-td:border prose-th:border prose-td:border-outline-gray-2 prose-th:border-outline-gray-2 prose-td:relative prose-th:relative prose-th:bg-surface-gray-2 prose-sm max-w-none !whitespace-normal py-3">
+							</div>
 						</div>
 					</div>
 					<div class="border-t mt-4">
@@ -61,10 +40,9 @@
 							<label class="block font-medium text-ink-gray-5 mb-1">
 								{{ __('Content') }}
 							</label>
-							<div
-								id="content"
-								class="ProseMirror prose prose-table:table-fixed prose-td:p-2 prose-th:p-2 prose-td:border prose-th:border prose-td:border-outline-gray-2 prose-th:border-outline-gray-2 prose-td:relative prose-th:relative prose-th:bg-surface-gray-2 prose-sm max-w-none !whitespace-normal py-3"
-							></div>
+							<div id="content"
+								class="ProseMirror prose prose-table:table-fixed prose-td:p-2 prose-th:p-2 prose-td:border prose-th:border prose-td:border-outline-gray-2 prose-th:border-outline-gray-2 prose-td:relative prose-th:relative prose-th:bg-surface-gray-2 prose-sm max-w-none !whitespace-normal py-3">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -491,7 +469,7 @@ const breadcrumbs = computed(() => {
 		})
 	}
 	crumbs.push({
-		label: lessonDetails?.data?.lesson ? 'Edit Lesson' : 'Create Lesson',
+		label: lessonDetails?.data?.lesson ? __('Edit Lesson') : __('Create Lesson'),
 		route: {
 			name: 'LessonForm',
 			params: {
@@ -646,11 +624,9 @@ iframe {
 }
 
 .plyr__control--overlaid {
-	background: radial-gradient(
-		circle,
-		rgba(0, 0, 0, 0.4) 0%,
-		rgba(0, 0, 0, 0.5) 50%
-	);
+	background: radial-gradient(circle,
+			rgba(0, 0, 0, 0.4) 0%,
+			rgba(0, 0, 0, 0.5) 50%);
 }
 
 .plyr__control:hover {
@@ -694,7 +670,7 @@ iframe {
 	height: 15px;
 }
 
-.ce-popover--opened > .ce-popover__container {
+.ce-popover--opened>.ce-popover__container {
 	max-height: unset;
 }
 
